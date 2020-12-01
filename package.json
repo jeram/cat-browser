@@ -1,0 +1,22 @@
+{
+  "name": "cat-browser",
+  "version": "1.0.0",
+  "description": "Browse cat all you want",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jeram/cat-browser.git"
+  },
+  "keywords": [
+    "cat"
+  ],
+  "author": "Jeram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeram/cat-browser/issues"
+  },
+  "homepage": "https://github.com/jeram/cat-browser#readme"
+}
