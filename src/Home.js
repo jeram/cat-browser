@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, DropdownButton, Dropdown, Card } from 'react-bootstrap';
 import axios from 'axios';
 import { withRouter, Link } from "react-router-dom";
+import configData from "../config.json";
 
 class Home extends React.Component {
     constructor() {
@@ -27,7 +28,7 @@ class Home extends React.Component {
 
         axios
             .get("https://api.thecatapi.com/v1/breeds",
-            {headers: {'x-api-key': 'eb482756-0b2f-452d-a567-2975ee658c1c'}})
+            {headers: {'x-api-key': configData.THE_CAT_API_KEY}})
             .then(response => {
                 this.setState({ breeds: response.data });
 
@@ -57,7 +58,7 @@ class Home extends React.Component {
         axios
             .get("https://api.thecatapi.com/v1/images/search",
             {
-                headers: {'x-api-key': 'eb482756-0b2f-452d-a567-2975ee658c1c'},
+                headers: {'x-api-key': configData.THE_CAT_API_KEY},
                 params: {
                     breed_id : this.state.selectedBreedId,
                     page : this.state.page,

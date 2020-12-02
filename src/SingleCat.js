@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import axios from 'axios';
 import { withRouter, Link } from "react-router-dom";
+import configData from "../config.json";
 
 class SingleCat extends React.Component {
     constructor() {
@@ -26,7 +27,7 @@ class SingleCat extends React.Component {
 
         axios
             .get("https://api.thecatapi.com/v1/images/" + catId,
-            {headers: {'x-api-key': 'eb482756-0b2f-452d-a567-2975ee658c1c'}})
+            {headers: {'x-api-key': configData.THE_CAT_API_KEY}})
             .then(response => {
                 this.setState({ selectedCat: response.data });
             })
