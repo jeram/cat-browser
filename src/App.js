@@ -12,16 +12,16 @@ import {
   export default function App() {
     return (
         <Router>
-          <div>
-            <Switch>
-              <Route path="/:catId">
-                <SingleCat />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </div>
+            <div>
+                <Switch>
+                <Route path="/:catId">
+                    <SingleCat />
+                </Route>
+                <Route path="/">
+                    <Home />
+                </Route>
+                </Switch>
+            </div>
         </Router>
       );
 }

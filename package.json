@@ -1,41 +1,41 @@
 {
-  "name": "cat-browser",
-  "version": "1.0.0",
-  "description": "Browse cat all you want",
-  "main": "src/index.js",
-  "scripts": {
-    "compile": "webpack",
-    "build": "webpack -p",
-    "start": "node server.js"
-  },
-  "keywords": [
-    "react",
-    "webpack",
-    "babel"
-  ],
-  "author": "Jeram",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/jeram/cat-browser.git"
-  },
-  "dependencies": {
-    "axios": "^0.21.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "bootstrap": "^4.5.3",
-    "express": "^4.16.3",
-    "react": "^16.4.1",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^5.2.0",
-    "webpack": "^4.16.3",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-middleware": "^3.1.3"
-  },
-  "devDependencies": {
-    "css-loader": "^5.0.1"
-  }
+    "name": "cat-browser",
+    "version": "1.0.0",
+    "description": "Browse cat all you want",
+    "main": "src/index.js",
+    "scripts": {
+        "compile": "webpack",
+        "build": "webpack -p",
+        "start": "node server.js"
+    },
+    "keywords": [
+        "react",
+        "webpack",
+        "babel"
+    ],
+    "author": "Jeram",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/jeram/cat-browser.git"
+    },
+    "dependencies": {
+        "axios": "^0.21.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "bootstrap": "^4.5.3",
+        "express": "^4.16.3",
+        "react": "^16.4.1",
+        "react-bootstrap": "^1.4.0",
+        "react-dom": "^16.4.1",
+        "react-router-dom": "^5.2.0",
+        "webpack": "^4.16.3",
+        "webpack-cli": "^4.2.0",
+        "webpack-dev-middleware": "^3.1.3"
+    },
+    "devDependencies": {
+        "css-loader": "^5.0.1"
+    }
 }

@@ -127,7 +127,9 @@ class Home extends React.Component {
         return (
             <div className="container">
                 <h1>Cat Browser</h1>
-                <DropdownButton title={this.state.selectorTitle}>
+                <DropdownButton 
+                    title={this.state.selectorTitle}
+                    style={{ maxHeight: "28px" }}>
                     {this.state.breeds.map((e, key) => {
                         return <Dropdown.Item key={key} eventKey={e.id} 
                         active={e.id == this.state.selectedBreedId ? true : ''}

@@ -7,29 +7,29 @@ const app = express();
 const compiler = webpack(webpackConfig);
 
 app.use(
-  webpackDevMiddleware(compiler, {
-    hot: true,
-    filename: "bundle.js",
-    publicPath: "/",
-    stats: {
-      colors: true
-    },
-    historyApiFallback: true
-  })
+    webpackDevMiddleware(compiler, {
+        hot: true,
+        filename: "bundle.js",
+        publicPath: "/",
+        stats: {
+        colors: true
+        },
+        historyApiFallback: true
+    })
 );
 
 app.use(express.static(__dirname + "/dist"));
 
 const server = app.listen(3000, function() {
-  const host = server.address().address;
-  const port = server.address().port;
-  console.log("Example app listening at http://%s:%s", host, port);
+    const host = server.address().address;
+    const port = server.address().port;
+    console.log("Example app listening at http://%s:%s", host, port);
 });
 
 app.get('/*', function(req, res) {
-  res.sendFile(__dirname + '/dist/index.html', function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
+    res.sendFile(__dirname + '/dist/index.html', function(err) {
+        if (err) {
+            res.status(500).send(err)
+        }
+    })
 })
