@@ -6,6 +6,7 @@ const app = express();
 
 const compiler = webpack(webpackConfig);
 
+//middleware
 app.use(
     webpackDevMiddleware(compiler, {
         hot: true,
